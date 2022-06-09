@@ -64,6 +64,7 @@ let btn = document.querySelector(".form");
   btn.addEventListener("submit", (e) => {
     e.preventDefault();
     if (
+
       name.value == "" || 
       adress.value == "" || 
     work.value == "" || 
@@ -80,6 +81,18 @@ let btn = document.querySelector(".form");
       sendmail(name.value, adress.value, work.value, style.value, level.value, expectations.value, more.value,  payment.value  );
       success();
       loader.style.display = "none";
+   
+//     document.querySelector(".names").value == "" ;
+//       document.querySelector(".adress").value == "" ;
+//       document.querySelector(".work").value == "" ;
+//      document.querySelector(".style").value == "" ;
+//       document.querySelector(".level").value == "" ;
+// document.querySelector(".expectations").value == "" ;
+//     document.querySelector(".more").value == "" ;
+//       document.querySelector(".payment").value == "" ;
+
+btn.reset();
+
     }
   });
 }
