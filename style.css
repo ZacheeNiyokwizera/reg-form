@@ -197,13 +197,14 @@ form {
 /* style for forms */
 
 input[type=text],
+input[type=email],
 select {
     width: 100%;
-    padding: 12px;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-    height: 42px;
+    height: 32px;
     border: none;
     background-color: #f2f2f2;
 }

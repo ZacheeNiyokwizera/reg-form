@@ -11,6 +11,7 @@
 function validate() {
   let loader = document.querySelector(".loader");
   let name = document.querySelector(".names");
+  let email = document.querySelector(".email");
   let adress = document.querySelector(".adress");
   let work = document.querySelector(".work");
   let style = document.querySelector(".style");
@@ -21,10 +22,11 @@ function validate() {
  
 
 
-function sendmail(name, adress, work, style, level, expectations, more, payment ) {
+function sendmail(name, email, adress, work, style, level, expectations, more, payment ) {
   emailjs.send("service_x9fw0wr", "template_ertnsfs", {
  
     from_name: name,
+    email: email,
     adress: adress,
     work: work,
     style: style,
@@ -66,6 +68,7 @@ let btn = document.querySelector(".form");
     if (
 
       name.value == "" || 
+      email.value == "" || 
       adress.value == "" || 
     work.value == "" || 
     style.value == "" || 
@@ -78,7 +81,7 @@ let btn = document.querySelector(".form");
       emptyerror();
     } else {
       loader.style.display = "flex";
-      sendmail(name.value, adress.value, work.value, style.value, level.value, expectations.value, more.value,  payment.value  );
+      sendmail(name.value, email.value, adress.value, work.value, style.value, level.value, expectations.value, more.value,  payment.value  );
       success();
       loader.style.display = "none";
    
