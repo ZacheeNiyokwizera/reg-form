@@ -186,7 +186,6 @@ header .logo {
 
 form {
     width: 60%;
-    /* background-color: #03a9f4; */
     padding: 30px;
     height: 830px;
     background: #2F4F4F;
@@ -313,7 +312,8 @@ input[type=submit]:hover {
         height: 100px;
     }
     .text {
-        margin-top: -190px;
+        margin-top: -140px;
+        height: 270px;
     }
     .text h2 {
         font-size: 2em;
