@@ -94,6 +94,16 @@ let btn = document.querySelector(".form");
 //     document.querySelector(".more").value == "" ;
 //       document.querySelector(".payment").value == "" ;
 
+name.value == "" || 
+email.value == "" || 
+adress.value == "" || 
+work.value == "" || 
+style.value == "" || 
+level.value == "" || 
+expectations.value == "" || 
+more.value == "" || 
+payment.value == "" 
+
 btn.reset();
 
     }

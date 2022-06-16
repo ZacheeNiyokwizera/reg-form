@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("ZMuZ6kfJ7Na8nsEaS");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <div class="aside" id="register">
+
+        <form class="form" action="index.html">
+            <h3>Fill this form to Register</h3>
+            <div>
+                <label for="fname"> Names</label>
+                <input type="text" class="names" name="names" placeholder="Your names..">
+
+                <label for="adress">What is your email address ?</label>
+                <input type="email" class="email" name="email" placeholder="Your email..">
+
+                <label for="adress">Where are you based ?</label>
+                <input type="text" class="adress" name="adress" placeholder="Your adress..">
+
+                <label for="work">Which Organization do you work with?</label>
+                <input type="text" class="work" name="work" placeholder="Your organization name..">
+
+
+                <label for="method">How do you want to learn?</label>
+
+                <select class="style" name="style">
+                    <option value="virtually">Virtually</option>
+                    <option value="physically">Physically</option>
+                    
+            </select>
+            </div>
+
+            <div>
+
+                <label for="lname">Do you have some basics in French ?</label>
+                <select class="level" name="level">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    
+            </select>
+
+
+                <label for="expectations">What are your expectations?</label>
+                <input type="text" class="expectations" name="expectations" placeholder="What are your expectations?..">
+
+                <label for="lname">What would you want to know more?</label>
+                <input type="text" class="more" name="more" placeholder="What you want to know more..">
+
+                <label for="country">How would you want to pay your fees?</label>
+                <select class="payment" class="payment">
+                <option value="" selected>Choose Pay method</option>
+                    <option value="cash">Cash</option>
+                    <option value="mobile">Mobile Money</option>
+                    <option value="bank">Bank Account</option>
+                    
+            </select>
+
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+    </div>
+    <!-- loader -->
+    <div class="loader">
+        <!-- <img src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif" alt="" /> -->
+    </div>
+    <!-- Custom Script -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

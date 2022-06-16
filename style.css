@@ -187,9 +187,11 @@ header .logo {
 form {
     width: 60%;
     padding: 30px;
-    height: 830px;
+    height: 870px;
     background: #2F4F4F;
     color: #ccc;
+    margin-left: 300px;
+    margin-top: 170px;
 }
 
 
@@ -288,16 +290,16 @@ input[type=submit]:hover {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
     .home {
-        min-height: 220vh;
+        /* min-height: 220vh;
         flex-direction: column;
-        justify-content: space-around;
-        margin-bottom: -100px;
+        justify-content: space-around; */
+        margin-bottom: -120px;
     }
     form {
         width: 300px;
-        height: 980px;
+        height: 1030px;
         margin-left: -260px;
-        margin-top: -140px;
+        margin-top: 180px;
     }
     input[type=submit] {
         margin-left: 0;
@@ -311,11 +313,17 @@ input[type=submit]:hover {
         width: 20px;
         height: 100px;
     }
+    .aside {}
     .text {
         margin-top: -140px;
         height: 270px;
     }
     .text h2 {
         font-size: 2em;
+    }
+    .text a {
+        font-size: 0.7em;
+        width: 160px;
+        text-align: center;
     }
 }
